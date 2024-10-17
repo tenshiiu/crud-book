@@ -1,0 +1,17 @@
+{
+  "name": "crud-book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "test": "node --watch src/server-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "http": "^0.0.1-security"
+  }
+}

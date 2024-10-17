@@ -1,0 +1,11 @@
+// READ - Obter um livro específico
+app.get("/books/:id", (req, res) => {
+    const book = books.find(b => b.id === parseInt(req.params.id));
+
+    // Caso der erro.
+    if (!book) return res.status(404).send("Livro não encontrado");
+    res.json(book);
+});
+
+
+// Rota em desenvolvimento
